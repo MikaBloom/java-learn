@@ -1,4 +1,4 @@
-package br.com.caelum.fj11.cap15;
+package br.com.caelum.fj11.cap15.testeio;
 
 import java.io.BufferedWriter;
 import java.io.FileOutputStream;
