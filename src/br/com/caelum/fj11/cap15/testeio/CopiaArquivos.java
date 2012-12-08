@@ -31,8 +31,8 @@ public class CopiaArquivos {
 		Scanner entrada = new Scanner(in);
 //		
 		while (entrada.hasNextLine()) {
-			String linha = entrada.nextLine();
-			bw.write(linha);
+//			String linha = entrada.nextLine();
+			bw.write(entrada.nextLine());
 			bw.newLine();
 		}
 		

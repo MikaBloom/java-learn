@@ -25,8 +25,8 @@ public class TestaEntrada {
 			System.out.println(linha);
 			linha = br.readLine();
 		}
-		
 		*/
+		
 		
 		
 		
