@@ -10,11 +10,12 @@ public abstract class Conta implements Comparable<Conta>{
 	public int compareTo(Conta outra) {
 		if (this.numero > outra.numero) {
 			return 1;
-		} else if (this.numero < outra.numero) {
-			return -1;
-		} else {
-			return 0;
 		}
+		if (this.numero < outra.numero) {
+			return -1;
+		}
+		return 0;
+		
 		// return (this.numero - outra.numero);
 	}
 
