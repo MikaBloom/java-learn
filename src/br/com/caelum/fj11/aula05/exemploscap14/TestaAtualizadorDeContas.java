@@ -1,4 +1,4 @@
-package br.com.caelum.fj11.aula05;
+package br.com.caelum.fj11.aula05.exemploscap14;
 
 public class TestaAtualizadorDeContas {
 

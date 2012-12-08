@@ -11,6 +11,7 @@ public class Exe05 {
 	public static void main(String[] args) {
 
 		Conta conta = new ContaCorrente();
+		conta.setNumero(1234);
 		System.out.println(conta);
 		
 	}

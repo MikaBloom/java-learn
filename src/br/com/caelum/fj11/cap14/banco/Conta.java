@@ -19,7 +19,7 @@ public abstract class Conta {
 	
 	@Override
 	public String toString() {
-		return "Conta com Saldo: " + this.saldo;
+		return "Conta #" + this.numero + " com Saldo: " + this.saldo;
 	}
 
 	public int getNumero() {
