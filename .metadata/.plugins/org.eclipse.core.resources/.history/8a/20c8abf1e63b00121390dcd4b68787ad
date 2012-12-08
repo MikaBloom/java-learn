@@ -1,0 +1,16 @@
+package br.com.caelum.cap14;
+
+public class Sacola {
+
+	// private Item objeto;
+	private Object objeto;
+	
+	public void guard (Object o) {
+		this.objeto = o;
+	}
+	
+	public Object devolve() {
+		return this.objeto;
+	}
+	
+}

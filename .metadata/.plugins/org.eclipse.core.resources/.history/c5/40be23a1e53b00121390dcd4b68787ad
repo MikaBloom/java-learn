@@ -1,0 +1,16 @@
+package br.com.caelum.cap14;
+
+public class TestaSacola {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		Sacola sacola = new Sacola();
+		
+		sacola.guarda(new Funcionario());
+		
+		Funcionario f = sacola.devolve();
+	}
+
+}

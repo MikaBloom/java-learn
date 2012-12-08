@@ -1,0 +1,24 @@
+package br.com.caelum.aulas.funcionario2;
+
+public class Gerente extends Funcionario implements Autenticavel {
+	
+	private int senha;
+	
+	public void setSenha(int senha) {
+		this.senha = senha;
+	}
+	
+	public int getSenha() {
+		return this.senha;
+	}
+
+	public boolean autentica (int senha) {
+		return (this.getSenha() == senha);
+	}
+	
+	public double getBonificacao() {
+		return this.salario * 1.4 + 1000;
+		
+	}
+
+}

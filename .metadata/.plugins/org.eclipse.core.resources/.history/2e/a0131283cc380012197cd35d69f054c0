@@ -1,0 +1,9 @@
+package br.com.caelum.aulas.funcionario2;
+
+public class SistemaInterno {
+	
+	void login (Gerente g) {
+		g.autentica(1234);
+	}
+	
+}

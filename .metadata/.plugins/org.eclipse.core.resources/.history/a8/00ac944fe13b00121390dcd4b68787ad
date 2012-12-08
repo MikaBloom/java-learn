@@ -1,0 +1,11 @@
+import br.com.caelum.banco.conta.ContaCorrente;
+
+public class TestaJar {
+
+	public static void main(String[] args) {
+
+		ContaCorrente cc = new ContaCorrente();
+
+	}
+
+}

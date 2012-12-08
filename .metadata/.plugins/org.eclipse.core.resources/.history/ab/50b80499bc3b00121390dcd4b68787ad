@@ -1,0 +1,91 @@
+package cap11;
+
+class Conta {
+
+ // Atributos
+   private static int contador = 0;    // Contador de objetos na classe
+   private int numero;
+	private Cliente titular;
+   private double saldo;
+   private double limite;
+
+ // Construtor
+   
+   public Conta (){
+      Conta.contador++;
+      this.numero = Conta.contador;
+   }
+
+ 
+ // Metodos
+   
+   
+   // Retorna o total de contas.
+   public int getTotalContas() {
+      return Conta.contador;
+   }
+
+
+   // Pega o numero da conta.
+   public int getNumero(){
+      return this.numero;
+   }
+
+
+   // Pega Saldo
+   public double getSaldo(){
+      return this.saldo + this.limite;
+   }
+
+
+   // Pega Titular
+   public Cliente getTitular() {
+      return this.titular;
+   }
+
+   // Atribui Titular
+   public void setTitular ( Cliente c ) {
+      this.titular = c;
+   }
+
+ 	// Deposito em conta.
+	public void deposita (double valor) {
+		if (valor > 0)
+         this.saldo += valor;		
+	}
+
+	// Saque em conta.
+	/*
+	public boolean saca (double valor) {
+		if (this.getSaldo() >= valor) {
+			this.saldo -= valor;
+			return true;
+		} 
+		return false;			
+	}	
+	*/
+	public void saca (double valor) {
+		if (valor < 0) {
+			
+		}
+		if (this.getSaldo() >= valor) {
+			this.saldo -= valor;			
+		} 		
+	}
+	
+	
+	// Transferencia entre contas.
+	public boolean transferePara(Conta destino, double valor) {
+		boolean resultado = this.saca(valor);		
+		if (resultado) {
+			destino.deposita(valor);			
+		}
+		return resultado;
+	}
+
+
+	public void setLimite(double valor) {
+		this.limite = valor;	
+	}
+
+}

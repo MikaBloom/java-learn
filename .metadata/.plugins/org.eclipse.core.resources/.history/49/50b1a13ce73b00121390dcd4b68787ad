@@ -1,0 +1,15 @@
+package br.com.caelum.cap14;
+
+public class Sacola {
+	
+	private Object objeto;
+	
+	public void guarda (Object o) {
+		this.objeto = o;
+	}
+	
+	public Object devolve() {
+		return this.objeto;
+	}
+	
+}

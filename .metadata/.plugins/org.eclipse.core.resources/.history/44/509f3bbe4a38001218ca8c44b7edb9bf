@@ -1,0 +1,15 @@
+package br.com.caelum.aulas.funcionario;
+
+public class TestaControleBonificacao {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		Funcionario f = new Funcionario();
+		f.setNome("João");
+		f.setSalario(1000.0);
+		f.setCpf("11111111111");
+	}
+
+}

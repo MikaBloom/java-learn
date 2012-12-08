@@ -1,0 +1,9 @@
+package cap11;
+
+public class SaldoInsuficienteException extends IllegalArgumentException {
+	
+	public SaldoInsuficienteException(String msg){
+		super(msg);
+	}
+
+}

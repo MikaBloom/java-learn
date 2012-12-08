@@ -1,0 +1,18 @@
+package cap11;
+
+// import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+
+public class TestaException {
+
+	//private static FileInputStream fileInputStream;
+
+	/**
+	 * @param args
+	 * @throws FileNotFoundException 
+	 */
+	public static void main(String[] args) throws FileNotFoundException {
+	//	fileInputStream = new java.io.FileInputStream("Arquivo.txt");
+	}
+
+}

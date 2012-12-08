@@ -1,0 +1,17 @@
+package br.com.caelum.aulas.funcionario2;
+
+public class TestaSistema {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		
+		Funcionario g = new Gerente();
+		g.setNome("Fernando");
+		g.setSalario(12000.0);
+		g.setSenha(1234);
+		
+	}
+
+}

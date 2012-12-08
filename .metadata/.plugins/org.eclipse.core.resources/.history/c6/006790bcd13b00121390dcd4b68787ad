@@ -1,0 +1,17 @@
+package cap11;
+
+public class TestaDeposita {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		
+		Conta cc = new Conta();
+		cc.deposita2(100.0);
+		
+		System.out.println("Saldo: " + cc.getSaldo());
+		
+	}
+
+}
