@@ -17,10 +17,11 @@ public class GerenciadorCarrinho {
 		Item revista = new Item("Revista");
 		Item jornal = new Item("Jornal");
 
+		c.adiciona(jornal);
 		c.adiciona(dvd);
 		c.adiciona(cd);
 		c.adiciona(revista);
-		c.adiciona(jornal);
+		
 		
 		
 

@@ -1,6 +1,6 @@
 package br.com.caelum.fj11.aula05.exemploscap15.compras;
 
-public class Item implements Comparable<Object>{
+public class Item implements Comparable<Item>{
 
 	private String nome;
 
@@ -22,9 +22,8 @@ public class Item implements Comparable<Object>{
 	}
 
 	@Override
-	public int compareTo(Object o) {
-		// TODO Auto-generated method stub
-		return 0;
+	public int compareTo(Item item) {
+		return this.getNome().compareTo(item.getNome());
 	}
 	
 	
